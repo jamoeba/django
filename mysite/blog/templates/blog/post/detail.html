@@ -8,4 +8,5 @@
     Published {{ post.publish }} by {{ post.author }}
   </p>
   {{ post.body|linebreaks }}
+  <h5><a href="{{ post.get_back }}">back</a></h5>
 {% endblock %}

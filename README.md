@@ -7,3 +7,4 @@ create django project learning by Jingle
 
 ## 2018/6/8
 get back and check progress
+add get back function

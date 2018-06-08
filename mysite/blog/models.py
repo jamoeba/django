@@ -38,3 +38,6 @@ class Post(models.Model):
                               self.publish.strftime('%m'),
                               self.publish.strftime('%d'),
                               self.slug])
+
+    def get_back(self):
+        return reverse('blog:post_list')
