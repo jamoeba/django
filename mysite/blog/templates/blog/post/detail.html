@@ -4,7 +4,8 @@
 
 {% block content %}
   <h1>{{ post.title }}</h1>
-  <p class="tags">Tags: {{ post.tags.all|join:", " }}</p>
+  <!-- 添加判定是否有标签，无则表明none -->
+  <p class="tags">Tags: {% if post.tags.all %}{{ post.tags.all|join:", " }}{% else %}none{% endif %}</p>
   <p class="date">
     Published {{ post.publish }} by {{ post.author }}
   </p>
